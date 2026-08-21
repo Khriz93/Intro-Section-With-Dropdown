@@ -4,25 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
+  <nav class="nav-bar">
+    <a href="#" class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </a>
+    <button class="hamburger" aria-label="Open menu">
+      <img src="./images/icon-menu.svg" alt="">
+    </button>
 
-  Features
-  Company
-  Careers
-  About
+    <div class="nav-menu">
+      <button class="close-menu" aria-label="Close menu">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>
 
-  Login
-  Register
+      <div class="nav-left">
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="dropdown-menu icon-menu">
+            <a href="#">
+              <img src="./images/icon-todo.svg" alt="">
+              <span>Todo List</span>
+            </a>
+            <a href="#">
+              <img src="./images/icon-calendar.svg" alt="">
+              <span>Calendar</span>
+            </a>
+            <a href="#">
+              <img src="./images/icon-reminders.svg" alt="">
+              <span>Reminders</span>
+            </a>
+            <a href="#">
+              <img src="./images/icon-planning.svg" alt="">
+              <span>Planning</span>
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">
+                Company
+                <img src="./images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="dropdown-menu">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div> 
+
+      <div class="nav-right">
+        <a href="#">Login</a>
+        <a href="#" class="register-btn">Register</a>
+      </div>
+    </div>
+  </nav>
 
   Make remote work
 
@@ -30,10 +75,5 @@
   create team rituals, and watch productivity soar.
 
   Learn more
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>
