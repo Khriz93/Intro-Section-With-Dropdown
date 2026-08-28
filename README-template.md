@@ -27,7 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Desktop-Screenshot.png)
+![](./images/Desktop-Screenshot-Menu-Expanded.png)
+![](./images/Mobile-screenshot.jpg)
+![](./images/Mobile-Screenshot-Menu-Expanded.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -86,10 +89,6 @@ dropdownButtons.forEach(function(button)
 });
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 I need to becareful with the tablet design layouts. It seems that my devices are too big and when using the tablet to test layouts they become a bit all over the place. This gets confusing as well when trying to get the layouts as close as possible. There are still some areas for tablet layout that I need to work on and I will continue to improve in future challenges.
@@ -100,5 +99,4 @@ I need to becareful with the tablet design layouts. It seems that my devices are
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@khriz93](https://www.frontendmentor.io/profile/Khriz93)
