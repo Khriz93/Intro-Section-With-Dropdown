@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="nav-bar">
-    <a href="#" class="logo">
+    <a href="#home" class="logo">
       <img src="./images/logo.svg" alt="Logo">
     </a>
-    <button class="hamburger" aria-label="Open menu">
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
       <img src="./images/icon-menu.svg" alt="">
     </button>
 
@@ -30,19 +31,19 @@
             <img src="./images/icon-arrow-down.svg" alt="">
           </button>
           <div class="dropdown-menu icon-menu">
-            <a href="#">
+            <a href="#home">
               <img src="./images/icon-todo.svg" alt="">
               <span>Todo List</span>
             </a>
-            <a href="#">
+            <a href="#home">
               <img src="./images/icon-calendar.svg" alt="">
               <span>Calendar</span>
             </a>
-            <a href="#">
+            <a href="#home">
               <img src="./images/icon-reminders.svg" alt="">
               <span>Reminders</span>
             </a>
-            <a href="#">
+            <a href="#home">
               <img src="./images/icon-planning.svg" alt="">
               <span>Planning</span>
             </a>
@@ -54,18 +55,18 @@
                 <img src="./images/icon-arrow-down.svg" alt="">
           </button>
           <div class="dropdown-menu">
-            <a href="#">History</a>
-            <a href="#">Our Team</a>
-            <a href="#">Blog</a>
+            <a href="#home">History</a>
+            <a href="#home">Our Team</a>
+            <a href="#home">Blog</a>
           </div>
         </div>
-        <a href="#">Careers</a>
-        <a href="#">About</a>
+        <a href="#home">Careers</a>
+        <a href="#home">About</a>
       </div> 
 
       <div class="nav-right">
-        <a href="#">Login</a>
-        <a href="#" class="register-btn">Register</a>
+        <a href="#home">Login</a>
+        <a href="#home" class="register-btn">Register</a>
       </div>
     </div>
   </nav>
