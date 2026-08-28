@@ -28,7 +28,6 @@ main {
     width: 70%;
     height: 100vh;
     padding: 80px 25px 25px;
-    background-color: hsl(0, 0%, 98%);
     box-sizing: border-box;
     z-index: 1000;
 }
@@ -154,69 +153,183 @@ main {
     font-size: 1.25rem;
 }
 
-@media (min-width: 768px) {
-    .logo {
-        padding: 10px 15px 0;
-    }
-    .nav-menu {
-        display: flex;
-        position: static;
-        width: 100%;
-        height: auto;
+.learn-more-btn {
+    width: 35%;
+    height: 44px;
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Epiogue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.client-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.client-logos img {
+    display: block;
+    max-width: 70px;
+    height: auto;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        margin: 0;
         padding: 0;
-        flex-direction: row;
-        align-items: center;
-        background-color: none;
     }
 
-    .dropdown-btn {
-        font-size: 16px;
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 30px;
+        box-sizing: border-box;
+    }
+
+    .logo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        display: block;
+        width: 32px;
+        height: auto;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100vh;
+        padding: 90px 35px 35px;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .close-menu img {
+        display: block;
+        width: 30px;
+        height: 30px;
     }
 
     .nav-left {
-        padding: 0 80px 0;
-        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
     }
 
-    .nav-left, .nav-right {
-        flex-direction: row;
+    .nav-left a {
+        font-size: 18px;
+    }
+
+    .dropdown-btn {
+        display: flex;
         align-items: center;
-        gap: 30px;
-        font-size: 16px;
+        gap: 12px;
+        padding: 0;
+        background: none;
+        border: none;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 41%);
+        cursor: pointer;
+    }
+
+    .dropdown-btn img {
+        width: 12px;
+        height: auto;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .icon-menu a img{
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
     }
 
     .nav-right {
-        margin-top: 0;
-        margin-left: auto;
-        padding: 0 30px 0 20px;
-        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        margin-top: 45px;
+    }
+
+    .nav-right a {
+        font-size: 18px;
     }
 
     .register-btn {
-        width: auto;
-        height: auto;
-        padding: 12px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 48px;
+        border: 1px solid hsl(0, 0%, 8%);
+        border-radius: 14px;
+        box-sizing: border-box;
     }
 
-    .hamburger, .close-menu {
-        display: none;
-    }
-    
     .hero {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        max-width: none;
         width: 100%;
-        margin: 60px auto;
-        padding: 0 0 0 90px;
+        padding: 50px 40px;
         box-sizing: border-box;
     }
 
     .hero-img {
         display: flex;
-        flex: 0 0 35%;
-        margin-left: auto;
+        justify-content: flex-end;
+        width: 45%;
     }
 
     .hero-img picture {
@@ -226,25 +339,286 @@ main {
     .hero-img img {
         display: block;
         width: auto;
+        height: 450px;
         max-width: 100%;
-        height: 650px;
         object-fit: contain;
-        margin-left: auto;
     }
 
     .hero-content {
-        flex: 0 0 45%;
-        padding-left: 100px;
-        margin-bottom: 120px;
+        width: 50%;
+        padding: 20px;
         text-align: left;
+        font-family: 'Epilogue', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .hero-text {
+        transform: translateY(80px);
+    }
+
+    .hero-content h1 {
+        margin: 0 0 25px;
+        font-size: 48px;
+        line-height: 1.05;
+        color: hsl(0, 0%, 0.8%);
+    }
+
+    .hero-content p {
+        max-width: 620px;
+        margin: 0 0 30px;
+        font-size: 18px;
+        line-height: 1.6;
+        gap: 60px;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .learn-more-btn {
+        width: 55%;
+        padding: 15px 28px;
+        background-color: hsl(0, 0%, 8%);
+        border: 1px solid hsl(0, 0%, 8%);
+        border-radius: 14px;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(0, 0%, 98%);
+    }
+
+    .client-logos {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 50%;
+        gap: 20px;
+    }
+
+    .client-logos img {
+        width: auto;
+        max-width: 70px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Epilogue', sans-serif;
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 40px 25px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    .hamburger, .close-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding-left: 60px;
+    }
+
+    .nav-left a {
+        font-size: 14px;
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+        background: none;
+        border: none;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(0, 0%, 41%);
+        cursor: pointer;
+    }
+
+    .dropdown-btn img {
+        width: 10px;
+        height: auto;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        flex-direction: column;
+        min-width: 130px;
+        padding: 20px;
+        gap: 15px;
+        background-color: hsl(0, 0%, 98%);
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .dropdown-menu.active {
+        display: flex;
+    }
+
+    .dropdown-menu a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        font-size: 14px;
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .icon-menu {
+        left: -70px;
+        min-width: 150px;
+    }
+
+    .icon-menu a img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        margin-top: 0;
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .nav-right a {
+        font-size: 14px;
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+
+    .register-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding: 12px 22px;
+        border: 1px solid hsl(0, 0%, 41%);
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        margin: 40px auto 0;
+        padding: 0 70px;
+        box-sizing: border-box;
+    }
+
+    .hero-img {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-img picture {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-img img {
+        display: block;
+        width: auto;
+        height: 560px;
+        max-width: 100%;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 40px 0 0;
+        text-align: left;
+        font-family: 'Epilogue', sans-serif;
         box-sizing: border-box;
     }
 
     .hero-content h1 {
-        font-size: 6rem;
+        margin: 0 0 40px;
+        max-width: 520px;
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 1;
+        color: hsl(0, 0%, 8%);
     }
 
     .desktop-break {
         display: block;
     }
+
+    .hero-content p {
+        max-width: 450px;
+        margin: 0 0 40px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .learn-more-btn {
+        padding: 16px 28px;
+        background-color: hsl(0, 0%, 8%);
+        border: 1px solid hsl(0, 0%, 8%);
+        font-family: 'Epilogue', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: hsl(0, 0%, 98%);
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    
 }
