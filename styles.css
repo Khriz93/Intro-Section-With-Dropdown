@@ -99,7 +99,7 @@ main {
 }
 
 .dropdown-btn, .hero-content p, a {
-    font-family: 'Epiogue', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
     text-decoration: none;
@@ -132,7 +132,7 @@ main {
 .hero-content {
     padding: 40px 28px;
     text-align: center;
-    font-family: 'Epiogue', sans-serif;
+    font-family: 'Epilogue', sans-serif;
 }
 
 .hero-content h1 {
@@ -150,19 +150,19 @@ main {
     width: 100%;
     margin: 0 0 25px;
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .learn-more-btn {
-    width: 35%;
-    height: 44px;
+    width: 40%;
+    height: 55px;
     background-color: hsl(0, 0%, 8%);
-    font-family: 'Epiogue', sans-serif;
-    font-weight: 600;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     color: hsl(0, 0%, 98%);
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 .client-logos {
@@ -171,11 +171,12 @@ main {
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
+    gap: 25px;
 }
 
 .client-logos img {
     display: block;
-    max-width: 70px;
+    max-width: 80px;
     height: auto;
 }
 
@@ -554,9 +555,9 @@ main {
         flex-direction: row-reverse;
         align-items: center;
         width: 100%;
-        max-width: 1300px;
+        max-width: 1440px;
         margin: 40px auto 0;
-        padding: 0 70px;
+        padding: 0 50px;
         box-sizing: border-box;
     }
 
@@ -573,7 +574,7 @@ main {
     .hero-img img {
         display: block;
         width: auto;
-        height: 560px;
+        height: 650px;
         max-width: 100%;
         margin-left: auto;
         object-fit: contain;
@@ -587,10 +588,14 @@ main {
         box-sizing: border-box;
     }
 
+    .hero-text {
+        transform: translateY(120px);
+    }
+
     .hero-content h1 {
         margin: 0 0 40px;
-        max-width: 520px;
-        font-size: 65px;
+        max-width: 580px;
+        font-size: 85px;
         font-weight: 700;
         line-height: 1;
         color: hsl(0, 0%, 8%);
@@ -609,16 +614,60 @@ main {
     }
 
     .learn-more-btn {
-        padding: 16px 28px;
+        width: 25%;
+        padding: 14px 28px;
         background-color: hsl(0, 0%, 8%);
         border: 1px solid hsl(0, 0%, 8%);
         font-family: 'Epilogue', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 17px;
+        font-weight: 700;
         color: hsl(0, 0%, 98%);
         cursor: pointer;
         transition: 0.2s ease;
     }
 
+    .learn-more-btn:hover {
+        background-color: transparent;
+        color: hsl(0, 0%, 8%);
+    }
     
+    .client-logos {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-top: 240px;
+    }
+
+    .hero .client-logos img {
+        display: block;
+        width: auto;
+        max-width: 95%;
+        height: auto;
+        object-fit: contain;
+    }
+
+        .hero .client-logos img:nth-child(1) {
+        width: 120px;
+    }
+
+    .hero .client-logos img:nth-child(2) {
+        width: 80px;
+    }
+
+    .hero .client-logos img:nth-child(3) {
+        width: 100px;
+    }
+
+    .hero .client-logos img:nth-child(4) {
+        width: 100px;
+    }
+
+    .nav-left > a:hover, .nav-right a:hover, .dropdown-btn:hover {
+        color: hsl(0, 0%, 8%);
+    }
+
+    .register-btn:hover {
+        border-color: hsl(0, 0%, 8%);
+    }
 }
